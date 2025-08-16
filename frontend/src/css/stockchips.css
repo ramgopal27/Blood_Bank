@@ -1,0 +1,34 @@
+/* StockChips.css */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.chip {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  transition: transform 0.2s;
+  cursor: default;
+}
+
+.chip.ok {
+  background-color: #43a047; /* Green for sufficient stock */
+}
+
+.chip.warn {
+  background-color: #ffa000; /* Amber for low stock */
+}
+
+.chip.danger {
+  background-color: #e53935; /* Red for empty/critical stock */
+}
+
+.chip:hover {
+  transform: scale(1.05);
+}

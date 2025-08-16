@@ -1,0 +1,77 @@
+.navbar-container {
+  position: relative;
+}
+
+.hamburger-icon {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  width: 220px;
+  background-color: red;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.navbar-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  padding: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-menu li:last-child {
+  border-bottom: none;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.navbar-menu li a:hover {
+  background-color: white;
+  color: red;
+  border-radius: 4px;
+}
+.red-button {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: red;
+  border: none;
+}
+
+.red-button:hover {
+  background-color: white;
+  color: red;
+  border-radius: 4px;
+}

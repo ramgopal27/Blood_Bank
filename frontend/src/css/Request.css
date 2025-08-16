@@ -1,0 +1,56 @@
+.br-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.br-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.br-form input,
+.br-form button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.br-form button {
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.br-form button:hover {
+  background: darkred;
+}
+
+.br-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.br-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.br-table th,
+.br-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.br-table th {
+  background: #eee;
+}

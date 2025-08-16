@@ -1,0 +1,193 @@
+/* ---------------------------
+   Container & Layout
+--------------------------- */
+.ud-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* ---------------------------
+   Sidebar
+--------------------------- */
+.ud-sidebar {
+  width: 250px;
+  background-color: red; /* Dark gray */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.ud-user-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ud-user-info img {
+  width: 50px;
+  height: auto;
+  border-radius: 80%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 1px solid white; /* red accent */
+}
+
+.ud-user-info h2 {
+  margin: 0;
+  font-size: 18px;
+  color: white;
+}
+
+.ud-user-info p {
+  font-size: 14px;
+  color: white;
+}
+
+/* Sidebar Navigation */
+.ud-nav button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.ud-nav button:hover {
+  background-color: white;
+  color: red; /* slightly lighter gray */
+}
+
+.ud-logout-btn {
+  margin-top: auto;
+  background-color: #f87171; /* red */
+  font-weight: bold;
+}
+
+.ud-logout-btn:hover {
+  background-color: #ef4444; /* darker red */
+}
+
+/* ---------------------------
+   Main Content
+--------------------------- */
+.ud-main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Stats Section */
+.ud-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* Sections */
+.ud-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ud-section h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: red;
+}
+
+/* Section Content */
+.ud-section-content {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ud-section-content p {
+  margin: 5px 0;
+}
+
+/* Alerts */
+.alert {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.alert.info {
+  background-color: #3b82f6;
+}
+
+.alert.success {
+  background-color: #10b981;
+}
+
+.alert.warning {
+  background-color: #f59e0b;
+}
+
+.alert.error {
+  background-color: #ef4444;
+}
+
+/* Loading & Error */
+.ud-loading,
+.ud-error {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+/* Recent Activity List */
+.ud-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ud-section li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.ud-section li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ud-container {
+    flex-direction: column;
+  }
+
+  .ud-sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .ud-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .ud-main {
+    padding: 10px;
+  }
+
+  .ud-stats {
+    flex-direction: column;
+  }
+}

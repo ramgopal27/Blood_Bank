@@ -1,0 +1,174 @@
+/* --------- Wrapper & Card --------- */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 1rem;
+}
+
+.login-card {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --------- Logo --------- */
+.logo-container {
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-left: 30px;
+}
+
+.login-logo {
+  width: 50px;
+  height: 50;
+  align-items: center;
+}
+
+/* --------- Title --------- */
+.login-title {
+  color: #e60000;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  /* padding: 0 30px; */
+}
+
+/* --------- Alert --------- */
+.login-alert {
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+.alert-error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* --------- Role Selection (stacked vertically) --------- */
+.role-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+  width: 100%;
+  flex-direction: row;
+}
+
+.role-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* --------- Input Group --------- */
+.input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem 0.8rem;
+  border: 1px solid red;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+.input-group input:focus {
+  border-color: #e60000;
+  background-color: red;
+  color: white;
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  /* background: #fff; */
+  padding: 0 4px;
+  color: red;
+  /* border: 1px solid red; */
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -14px;
+  /* font-size: 0.8rem; */
+  color: #e60000;
+  background-color: none;
+}
+
+/* --------- Password Toggle --------- */
+.input-group .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #e60000; /* default red */
+  transition: color 0.2s ease;
+}
+
+/* Turn toggle white when input is focused OR has text */
+.input-group input:focus ~ .toggle-password {
+  color: white;
+}
+/* --------- Button --------- */
+.login-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #e60000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 0.5rem;
+}
+
+.login-btn:hover:enabled {
+  background-color: #b30000;
+}
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* --------- Signup text --------- */
+.signup-text {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.signup-text a {
+  color: #e60000;
+  text-decoration: none;
+}
+.signup-text a:hover {
+  text-decoration: underline;
+}

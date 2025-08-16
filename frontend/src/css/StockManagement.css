@@ -1,0 +1,100 @@
+/* StockManagement.css */
+
+h2,
+h3 {
+  color: #e53935;
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+form select,
+form input[type="number"],
+form input[type="date"] {
+  padding: 6px 10px;
+  border: 1px solid #e53935; /* red border */
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #fff; /* white background */
+  color: #000; /* black/dark text */
+  outline: none;
+  transition: 0.2s;
+}
+
+form select:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus {
+  border-color: #b71c1c; /* darker red on focus */
+  box-shadow: 0 0 5px rgba(229, 57, 53, 0.5);
+}
+
+form button {
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background-color: #b71c1c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+table th {
+  background-color: #e53935;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #fde0dc;
+}
+
+table button {
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+table button:hover {
+  background-color: #b71c1c;
+}
+
+div[style*="color: red"] {
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 14px;
+}

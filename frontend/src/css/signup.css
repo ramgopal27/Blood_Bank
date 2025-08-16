@@ -1,0 +1,288 @@
+.signup-card {
+  width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Card Title - stacked vertically */
+.card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-title .line1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.card-title .line1 img {
+  width: 50px;
+  height: auto;
+}
+
+.card-title .line1-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.card-title .line2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+/* Subtitle */
+.card-subtitle {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* Alert message */
+.alert {
+  color: red;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Section */
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-section h3 {
+  color: black;
+  margin-bottom: 15px;
+}
+
+/* Input boxes */
+.inputbox {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.inputbox input,
+.inputbox select,
+.inputbox textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid red;
+  border-radius: 6px;
+  background-color: white;
+  color: red;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.inputbox input:focus,
+.inputbox select:focus,
+.inputbox textarea:focus {
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+
+.inputbox span {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  color: red;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.inputbox input:focus + span,
+.inputbox input:not(:placeholder-shown) + span,
+.inputbox textarea:focus + span,
+.inputbox textarea:not(:placeholder-shown) + span {
+  top: -20px;
+  left: 10px;
+  color: red;
+  background: none;
+  padding: 0 5px;
+}
+
+/* Radio group */
+.radio-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.radio-group label {
+  color: black;
+  font-weight: 500;
+  margin: 10px;
+}
+
+/* Checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.checkbox-container input {
+  width: auto;
+}
+
+/* Submit Button */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+/* Login Link */
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+.form-section h3,
+.inputbox,
+.radio-group,
+.checkbox-container {
+  margin-bottom: 30px; /* uniform spacing */
+}
+
+.inputbox input,
+.inputbox select,
+.inputbox textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.radio-group label,
+.checkbox-container label {
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+/* --------- Section Title --------- */
+.section-title {
+  font-size: 1.5rem;
+  color: #e60000;
+  margin-bottom: 1.2rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* --------- Form Field --------- */
+.form-field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 0.8rem 0.8rem;
+  border: 1px solid red;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  background: #fff;
+}
+.form-field input:focus {
+  border-color: #e60000;
+  background-color: red;
+  color: white;
+}
+
+.form-field label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: red;
+  pointer-events: none;
+  /* background: #fff; */
+  padding: 0 4px;
+  transition: 0.3s;
+}
+
+.form-field input:focus + label,
+.form-field input:not(:placeholder-shown) + label {
+  top: -14px;
+  /* font-size: 0.8rem; */
+  color: #e60000;
+}
+
+/* --------- Submit Button --------- */
+.form-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 0.5rem;
+}
+
+.form-btn:hover {
+  background-color: red;
+  color: #fff;
+}
+/* --------- Role Group Horizontal --------- */
+.role-group {
+  display: flex;
+  flex-direction: row; /* horizontal layout */
+  /* justify-content: space-between; space between options */
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+/* --------- Role Option --------- */
+.role-option {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Radio button styling */
+.role-option input[type="radio"] {
+  accent-color: #e60000; /* red color for selected radio */
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
